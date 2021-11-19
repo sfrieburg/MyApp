@@ -39,7 +39,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text('Cum'),
+        centerTitle: true,
         backgroundColor: Colors.yellow[500],
       ),
       body: Center(
@@ -48,6 +49,10 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             const Text(
               'You have pushed the button this many times:',
+              style: TextStyle(
+                fontSize: 30.0,
+                color: Colors.red,
+              )
             ),
             Text(
               '$_counter',
