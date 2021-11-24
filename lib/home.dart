@@ -13,28 +13,27 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() {
       _selectedIndex = index;
     });
-    pageController.animateToPage(index, duration: Duration(milliseconds: 500), curve: Curves.easeIn);
+    pageController.animateToPage(index, duration: const Duration(milliseconds: 500), curve: Curves.easeIn);
   }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'),
+        centerTitle: true,
+        title: const Text('Daniel Larson'),
       ),
       body: PageView(
         controller: pageController,
         children: [
-          Container(color:Colors.red),
+          Container(color:Colors.black54),
           Container(color:Colors.green),
-          Container(color:Colors.yellow),
           Container(color:Colors.blue),
           Container(color:Colors.purple),
         ],
         ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.sports_bar), label: 'Sawyer'),
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home')
