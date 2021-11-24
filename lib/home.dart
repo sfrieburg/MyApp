@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
         ),
         body: const Center(
           child: Image(
-            image: AssetImage('assets/dude.jpeg'),
+            image: AssetImage('assets/dude.jpg'),
           ),
         ),
       )
