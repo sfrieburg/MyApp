@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
         title: const Text('Daniel Larson'),
       ),
-      // fuck
+
       body: PageView(
         controller: pageController,
         children: [
