@@ -26,15 +26,9 @@ class _HomeScreenState extends State<HomeScreen> {
         controller: pageController,
         children: [
           Container(color:Colors.black54),
-          Container(
-            child: Image.asset('assets/dude.jpg')
-          ),
-          Container(
-            child: Image.asset('assets/garfield.jpg')
-          ),
-          Container(
-            child: Image.asset('assets/dude.jpg')
-          )
+          Image.asset('assets/dude.jpg'),
+          Image.asset('assets/garfield.jpg'),
+          Image.asset('assets/dude.jpg')
         ],
         ),
       bottomNavigationBar: BottomNavigationBar(
